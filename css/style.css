@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 609px;
+    background: lightblue;
+}
+.nav{
+    background:#424949;
+}
+.nav ul{
+    display: flex;
+    justify-content: center;
+}
+.nav ul li{
+    list-style: none;
+    padding: 18px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.nav ul li .active{
+    color: darkgrey;
+}
+span{
+    margin-left: 35px;
+}
+.header{
+    height: 550px;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../img/car2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+.header-content h1{
+    padding-top: 200px;
+    padding-left: 500px;
+    color: white;
+    font-size: 50px;
+}
+.header-content h2{
+    padding-left: 507px;
+    color: white;
+    opacity: 0.6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+/* responsive code */
+@media screen and (max-width: 600px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav ul li{
+        padding-bottom: 0;
+    }
+    span{
+        padding-left: 0;
+        font-size: 19px;
+    }
+
+    .header-content{
+        padding-top: 200px;
+        padding-left: 17px;
+        height: 555px;;
+    }
+
+    .header-content h1{
+        padding-top: 0;
+        padding-left: 0;
+        width: 100;
+        
+    }
+    .header-content h2{
+        padding-left: 0;
+    }
+}
